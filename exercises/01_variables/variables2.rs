@@ -1,6 +1,9 @@
 fn main() {
     // TODO: Change the line below to fix the compiler error.
-    let x;
+
+    // Testing both cases
+    // let x = 10;
+    let x = 11;
 
     if x == 10 {
         println!("x is ten!");

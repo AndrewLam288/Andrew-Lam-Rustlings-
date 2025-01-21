@@ -1,6 +1,6 @@
 fn main() {
     // TODO: Add the missing keyword.
-    x = 5;
+    let x = 5; // Add let in front of x
 
     println!("x has the value {x}");
 }
