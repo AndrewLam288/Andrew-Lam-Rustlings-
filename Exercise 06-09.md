@@ -57,6 +57,10 @@ mod tests {
     }
 }
 
+## Code Explanation
+
+The code include a struct definition for Order with various fields and a function to create an Order template, which can be use to create new Order. The code begin with calling let your_order = Order { }; which is the creation of new Order instance using the struct with the name field, setting the count field and copies the remaining field from order_template that have been given into the new Order instance.
+
 ## My own write up
 
 This was pretty simple but somehow I over complicated myself, I try to put count: 1 after ..order_template but it seems not to work as it wouldn't allow a comma after the base struct. The base struct need to be the last field that got put in.
@@ -74,4 +78,4 @@ to: let your_order = Order {
             ..order_template
         };
 
-I just want to note this as it took me a while, mostly cause I didn't read carefully about the warning that Rust gave me. But are there any other scenario where it would fall off this base struct, like the base struct not being the final field
+I just want to note this as it took me a while, mostly cause I didn't read carefully about the warning that Rust gave me. But are there any other scenario where it would fall off this base struct, like the base struct not being the final field. Also I was wondering what is the #[cfg(test)] and the following mod tests, use super::*; was for
